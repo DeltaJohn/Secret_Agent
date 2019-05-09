@@ -1,6 +1,41 @@
 /* Universal Styles */
 
+.site_container, .header {
+  border: solid blue 1px;
+}
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+body {
+  background-color: black;
+}
+
+.site_container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+
 /* Header */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+#logo img {
+  height: 1.5rem;
+}
+
+#name span {
+  margin: .66rem 0 .66rem 1rem;
+}
+
 
 
 
