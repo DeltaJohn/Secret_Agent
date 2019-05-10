@@ -1,8 +1,10 @@
 /* Universal Styles */
 
-.site_container, .header {
+/* Dev visuals to be commented out when project is complete */
+.site_container, .header, .main_banner, .banner_box {
   border: solid blue 1px;
 }
+/* End of dev comment*/
 
 html {
   font-size: 18px;
@@ -14,8 +16,7 @@ body {
 }
 
 .site_container {
-
-  background-color: white;
+    background-color: white;
 }
 
 
@@ -46,6 +47,27 @@ body {
 
 
 /* Main Banner*/
+
+.main_banner {
+  height: 25rem;
+  background-image: url("./moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.banner_box {
+  width: 20rem;
+  height: 10rem;
+  background-color: black;
+  margin-top: 9rem;
+}
+
+
+
+.banner_box h4, .banner_box h1 {
+  color: white;
+}
 
 /* Nav_bar */
 
