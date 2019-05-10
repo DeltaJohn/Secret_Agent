@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 /* Dev visuals to be commented out when project is complete */
-.site_container, .header, .main_banner, .banner_box {
+.site_container,.header_stripe, .header, .main_banner, .banner_box {
   border: solid blue 1px;
 }
 /* End of dev comment*/
@@ -9,6 +9,7 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
+  color: white;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
 }
 
 .site_container {
+    display: flex;
     background-color: white;
 }
 
@@ -60,6 +62,7 @@ body {
   width: 20rem;
   height: 10rem;
   background-color: black;
+  margin-left: 11rem;
   margin-top: 9rem;
 }
 
@@ -70,6 +73,28 @@ body {
 }
 
 /* Nav_bar */
+
+.nav_bar {
+  display: flex;
+  background-color: firebrick;
+  justify-content: center;
+}
+
+.nav_bar p {
+  display: none;
+}
+
+.nav_bar nav {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+.nav_bar nav a {
+  color: white;
+}
 
 /*Products*/
 
