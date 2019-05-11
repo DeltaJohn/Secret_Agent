@@ -59,8 +59,8 @@ body {
 }
 
 .banner_box {
-  width: 20rem;
-  height: 10rem;
+  width: 25rem;
+  height: 11rem;
   background-color: black;
   margin-left: 11rem;
   margin-top: 9rem;
@@ -68,8 +68,23 @@ body {
 
 
 
-.banner_box h4, .banner_box h1 {
+.banner_box p, .banner_box h2 {
   color: white;
+}
+
+.banner_box p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-bottom: .25rem;
+}
+
+.banner_box h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 3rem;
+  margin-top: 0;
 }
 
 /* Nav_bar */
