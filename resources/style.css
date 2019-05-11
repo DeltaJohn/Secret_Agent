@@ -121,17 +121,27 @@ body {
 
   /*Products*/
 
+  .products {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .product_box {
     width: 30%;
     height: 300px;
     border: solid black 4px;
   }
 
+
   .product_box img {
     height: 9rem;
     width: 9rem;
-    margin: 2rem 2rem;
+    margin: 2rem 3rem;
+    border: blue solid 1px;
   }
+
 
 
 
