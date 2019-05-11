@@ -111,9 +111,31 @@ body {
   color: white;
 }
 
-/*Products*/
+/* Bottom section */
 
-/*Location*/
+.bottom_section {
+  width: 960px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+  /*Products*/
+
+  .product_box {
+    width: 30%;
+    height: 300px;
+    border: solid black 4px;
+  }
+
+  .product_box img {
+    height: 9rem;
+    width: 9rem;
+    margin: 2rem 2rem;
+  }
+
+
+
+  /*Location*/
 
 /*Footer*/
 
