@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 /* Dev visuals to be commented out when project is complete */
-.site_container,.header_stripe, .header, .main_banner, .banner_box {
+.site_container,.header_stripe, .header, #logo, .main_banner, .banner_box, .info, .location, .hours {
   border: solid blue 1px;
 }
 /* End of dev comment*/
@@ -12,13 +12,12 @@ html {
   color: white;
 }
 
-body {
-  background-color: black;
-}
+
 
 .site_container {
     display: flex;
     background-color: white;
+    width: 960px
 }
 
 
@@ -33,15 +32,19 @@ body {
 
 .header_stripe {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 960px;
   margin: 0 auto;
 }
 
 #logo img {
   height: 1.5rem;
+  margin: 0 auto;
 }
 
 #name span {
+  font-size: 1rem;
   margin: .66rem 0 .66rem 1rem;
 }
 
@@ -116,37 +119,97 @@ body {
 .bottom_section {
   width: 960px;
   margin: 0 auto;
-  background-color: gray;
+  background-color: white;
 }
 
   /*Products*/
 
   .products {
     display: flex;
+    width: 960px;
     justify-content: space-between;
     margin-top: 3rem;
-    margin-bottom: 3rem;
   }
 
-  .product_box {
-    width: 30%;
-    height: 300px;
-    border: solid black 4px;
+  .container {
+    height: 302px;
+    width: 300px;
+    border: solid black .225rem;
+    }
+
+  .container .image_box {
+    background-color: white;
   }
 
-
-  .product_box img {
-    height: 9rem;
-    width: 9rem;
-    margin: 2rem 3rem;
-    border: blue solid 1px;
+  img {
+    height: 200px;
+    width: 200px;
+    margin: 25px 50px;
   }
 
+  .span_box span {
+    color: white;
+    font-size: 32px;
+  }
+
+  .span_box {
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
 
 
 
   /*Location*/
 
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .location, .hours {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+  }
+
+  .info .alpha p {
+    margin-left: 2rem;
+    vertical-align: middle;
+  }
+
+  .alpha {
+    height: 3rem;
+    background-color: black;
+  }
+
+  .info .number p {
+    margin-left: 0;
+    margin-top: 0;
+    margin: bottom: 0;
+    color: black;
+  }
+
 /*Footer*/
+.footer_container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  width: 960px;
+}
 
 /*media rules!*/
