@@ -1,10 +1,10 @@
 /* Universal Styles */
 
-/* Dev visuals to be commented out when project is complete */
+/* Dev visuals to be commented out when project is complete
 .site_container,.header_stripe, .header, #logo, .main_banner, .banner_box, .info, .location, .hours {
   border: solid blue 1px;
 }
-/* End of dev comment*/
+End of dev comment*/
 
 html {
   font-size: 18px;
@@ -17,7 +17,7 @@ html {
 .site_container {
     display: flex;
     background-color: white;
-    width: 960px
+    max-width: 53rem;
 }
 
 
@@ -34,12 +34,13 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 960px;
+  width: 53rem;
   margin: 0 auto;
 }
 
 #logo img {
   height: 1.5rem;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -105,7 +106,7 @@ html {
 .nav_bar nav {
   display: flex;
   justify-content: space-between;
-  width: 960px;
+  width: 53rem;
   margin-top: .75rem;
   margin-bottom: .75rem;
 }
@@ -117,7 +118,7 @@ html {
 /* Bottom section */
 
 .bottom_section {
-  width: 960px;
+  max-width: 53rem;
   margin: 0 auto;
   background-color: white;
 }
@@ -126,14 +127,14 @@ html {
 
   .products {
     display: flex;
-    width: 960px;
+    width: 53rem;
     justify-content: space-between;
     margin-top: 3rem;
   }
 
   .container {
-    height: 302px;
-    width: 300px;
+    height: 15rem;
+    width: 16rem;
     border: solid black .225rem;
     }
 
@@ -142,18 +143,18 @@ html {
   }
 
   img {
-    height: 200px;
-    width: 200px;
-    margin: 25px 50px;
+    height: 9rem;
+    width: 9rem;
+    margin: 1.5rem 3rem;
   }
 
   .span_box span {
     color: white;
-    font-size: 32px;
+    font-size: 1.25rem;
   }
 
   .span_box {
-    height: 50px;
+    height: 3rem;
     display: flex;
     margin: 0 auto;
     justify-content: center;
@@ -209,7 +210,23 @@ html {
   justify-content: flex-start;
   align-items: center;
   background-color: black;
-  width: 960px;
+  width: 53rem;
 }
 
 /*media rules!*/
+
+@media only screen and (max-width: 600px) {
+
+  .nav_bar p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav_bar nav a {
+    display: none;
+  }
+
+  .products {
+    flex-wrap: nowrap;
+  }
+}
